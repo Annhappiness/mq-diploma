@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MQ Diploma</title>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="page">
         <header class="banner">
+          <div class="nav-toggle"><span></span></div>
           <div class="menu">
             <a class="logo" href="#0">
               <img class="mainimage" src="svg/noemi-logo.svg" width="180" alt="logo noemi"> </a>
@@ -348,10 +350,12 @@
         <h3 class="main-header">наши изделия</h3>
       
         <section class="content">
-          <div class="content-box">
+          <div class="content-box1">
             <article class="store">
               <picture class="store-picture">
-                <source srcset="images/shop-item-desk1.jpg" media="(min-width: 800px)">
+                <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1200px">
+                <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
+                <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1201px)">
                 <img src="images/shop-item-desk1.jpg" alt="подушка" />
               </picture>
               <div class="store-border">
@@ -372,7 +376,9 @@
       
             <article class="store">
               <picture class="store-picture">
-                <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1200px)">
+                <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1200px">
+                <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
+                <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1201px)">
                 <img src="images/shop-item-desk2.jpg" alt="кукла" />
               </picture>
               <div class="store-border">
@@ -391,7 +397,9 @@
             </article>
             <article class="store">
               <picture class="store-picture">
-                <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1200px)">
+                <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1200px">
+                <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
+                <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1201px)">
                 <img src="images/shop-item-desk3.jpg" alt="рамка" />
               </picture>
               <div class="store-border">
@@ -399,7 +407,7 @@
                 </h2>
                 <div class="store-text">
                   <p>Необычная рамка для украшения дома из видео <a class="store-link" href="#">"Как сделать рамку из подручных средств за 30 минут"</a></p>
-                  <div />
+                </div>
                   <div class="sell">
                     <div class="price">
                       <p class="old-price">500 р</p>
@@ -441,13 +449,13 @@
       </div>
 
  
-          <div class="popap hidden">
-            <div class="popap__container">
-              <div class="popap_area">
+          <div class="popup hidden">
+            <div class="popup__container">
+              <div class="popup_area">
                 <header class="popup__header">
                   <h3 class="popup__title">ваш фидбек</h3> 
                   </header>
-                  <div class="popap_area">
+                  <div class="popup_area">
                     <form class="popup__form">
                       
                         <div class="popup__column">
@@ -477,3 +485,4 @@
   </div>
 </body>
 </html>
+  
